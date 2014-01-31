@@ -10,3 +10,6 @@ go and install [dotfiler][], then clone this repository, using
 symlinks.
 
 [dotfiler]: https://github.com/svetlyak40wt/dotfiler
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/svetlyak40wt/dot-helpers/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
