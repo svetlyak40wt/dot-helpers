@@ -1,7 +1,7 @@
 # Splits a PEM chain of x509 certificates into separate
 # chunks and shows issuer/subject for each certificate
 show-certs-no-less () {
-    csplit -z -f /tmp/separate-cert- "$1" '/BEGIN CERTIFICATE/' '{*}' > /dev/null
+    csplit -f /tmp/separate-cert- "$1" '/BEGIN CERTIFICATE/' '{*}' > /dev/null
     for file in `ls /tmp/separate-cert-*`
     do
         openssl x509 -in "$file" -subject -issuer -noout
